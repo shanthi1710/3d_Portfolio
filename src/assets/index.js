@@ -9,6 +9,7 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
+import nextjs from "./tech/nextjs.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -28,9 +29,18 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
+import youtube from "./youtube.png";
+import wit from "./WIT.png";
+import blog from "./blog.png";
+import mywallet from "./mywallet.png";
+import formatfixer from "./formatfixer.png";
+import estate from "./estate.png";
 export {
+  wit,
+  blog,
+  mywallet,
+  formatfixer,
+  estate,
   logo,
   backend,
   creator,
@@ -58,5 +68,6 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,
+  youtube,
+  nextjs,
 };

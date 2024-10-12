@@ -16,27 +16,22 @@ import {
   figma,
   docker,
   meta,
+  youtube,
+  wit,
+  blog,
+  mywallet,
+  formatfixer,
+  estate,
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  nextjs,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
     title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
   },
 ];
 
@@ -46,7 +41,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend Developer",
     icon: mobile,
   },
   {
@@ -54,7 +49,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "data structures and algorithms",
     icon: creator,
   },
 ];
@@ -97,8 +92,8 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "git",
@@ -198,9 +193,30 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "My Wallet",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A finance app called Wallet, built with Next.js, Prisma, Docker, and webhooks. It lets users add money to their wallets and pay others securely.",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "postgres",
+        color: "green-text-gradient",
+      },
+      {
+        name: "web-hook",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mywallet,
+    source_code_link: "https://github.com/shanthi1710/My-Wallet",
+  },
+  {
+    name: "FormatFixer",
+    description:
+      "This project parses XL data, detects invalid formats, and links data, built with Next.js, Papa Parse, and Firebase. It offers efficient data validation and integration, ensuring accurate and smooth data handling.",
     tags: [
       {
         name: "react",
@@ -215,13 +231,34 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: formatfixer,
+    source_code_link: "https://github.com/shanthi1710/FormatFixer",
   },
   {
-    name: "Job IT",
+    name: "WIT Placement Portal",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This React web app streamlines placement drives for WIT Solapur students. Built with Vite, it uses AntDesign and TailwindCSS for styling, and Node.js for the backend.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: wit,
+    source_code_link: "https://github.com/shanthi1710/college-project",
+  },
+  {
+    name: "Real Estate",
+    description:
+      "This MERN real estate app features JWT, Firebase, Google OAuth authentication, CRUD with MongoDB, and advanced search.",
     tags: [
       {
         name: "react",
@@ -236,29 +273,50 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: estate,
+    source_code_link: "https://github.com/shanthi1710/Estate",
   },
   {
-    name: "Trip Guide",
+    name: "My-Blog",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This MERN blog app offers JWT, Google OAuth authentication, CRUD with MongoDB, and admin features. It supports comments, likes, and responsive design.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: blog,
+    source_code_link: "https://github.com/shanthi1710/mern-blog",
+  },
+  {
+    name: "YouTube-Backend",
+    description:
+      "This repository hosts the backend code for a YouTube-like platform built with Node.js, Express.js, MongoDB, and Cloudinary. It features user authentication, video uploading, liking, subscribing, and commenting functionalities.",
+    tags: [
+      {
+        name: "express js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "cloudinary",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: youtube,
+    source_code_link: "https://github.com/shanthi1710/youtube-backend..",
   },
 ];
 

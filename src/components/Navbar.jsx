@@ -29,7 +29,7 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      } w-full flex items-center py-5 fixed top-0 z-20 gap-8 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
@@ -94,6 +94,15 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <a
+        href="https://drive.google.com/file/d/1jO8NmSt7z7zegVINDQ83pBud6ajDwcr6/view?usp=sharing"
+        className="hidden rounded-sm border-2 border-accent-400 px-4 py-2 text-accent-400 md:block text-sm text-[18px] font-bold cursor-pointer"
+        aria-label="resume"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        Resume
+      </a>
     </nav>
   );
 };
