@@ -34,7 +34,7 @@ import wit from "./WIT.png";
 import blog from "./blog.png";
 import mywallet from "./mywallet.png";
 import formatfixer from "./FormatFixer.png";
-import estate from "./estate.png";
+import estate from "./Estate.png";
 export {
   wit,
   blog,
