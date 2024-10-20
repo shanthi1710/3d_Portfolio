@@ -52,8 +52,8 @@ const ComputersCanvas = () => {
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: isMobile ? 35 : 25 }} // Adjusted for mobile
-      style={{ width: "100vw", height: "100vh" }} // Ensure full viewport size
+      camera={{ position: [20, 3, 5], fov: isMobile ? 35 : 25 }}
+      style={{ width: "100vw", height: "100vh" }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
