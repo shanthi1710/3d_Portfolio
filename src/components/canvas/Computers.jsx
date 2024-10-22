@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
@@ -9,7 +9,7 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={1.5} groundColor="black" />
+      <hemisphereLight intensity={2} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -21,8 +21,8 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.3, -1.5]}
+        scale={isMobile ? 0.5 : 0.65}
+        position={isMobile ? [0, -3, -1.6] : [0, -3.25, -1.2]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -36,7 +36,7 @@ const ComputersCanvas = () => {
     // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
 
-    // Set the initial value of the isMobile state variable
+    // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
 
     // Define a callback function to handle changes to the media query
